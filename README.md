@@ -2,6 +2,7 @@
 
 - The default Sapper template,
 - updated to latest packages,
+- accessible routing (A11yAppWrapper.svelte component),
 - added postcss, postcss-import, svelte-preprocess and floor-typography-css,
 
 ...for setting up a [Sapper](https://github.com/sveltejs/sapper) project.
