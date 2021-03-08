@@ -15,10 +15,10 @@
 <style global>
 	@import 'floor-typography-css/src/reset.css';
 	@import 'floor-typography-css/src/normalize-style.css';
-	@import 'floor-typography-css/src/root-variables.css';
-	@import 'floor-typography-css/src/root-variables-headings.css';
-	@import 'floor-typography-css/src/root-variables-headings-lg.css' (min-width: 1200px);
+	@import 'floor-typography-css/src/vars.css';
+	/* Files below are optional: */
 	@import 'floor-typography-css/src/headings-font.css';
+	@import 'floor-typography-css/src/headings-font-lg.css' (min-width: 1200px);
 	@import 'floor-typography-css/src/headings-margin.css';
 	@import 'floor-typography-css/src/classes-sr.css';
 
