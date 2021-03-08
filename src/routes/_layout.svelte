@@ -28,6 +28,7 @@
 
 		max-width: 50em;
 		margin: var(--space, 1em) auto;
+		padding: 0 1ch;
 		font-family: var(--font-system);
 	}
 </style>
