@@ -9,6 +9,11 @@
 	import { stores } from '@sapper/app';
 	import { tick } from 'svelte';
 
+	export {
+		classes as class,
+		language as lang,
+	};
+
 	const { page } = stores();
 	const accessibleRouteChange = async () => {
 		if (!elWrapper) return;
@@ -34,12 +39,6 @@
 	let elMain;
 	let elWrapper;
 	let pathname = '';
-
-	export {
-		classes as class,
-		language as lang,
-	};
-	export let toTopLabel = 'Top of page';
 
 	page.subscribe(val => {
 		pathname = val.path.replace(/\/$/, '');
@@ -88,7 +87,9 @@
 			class="link-skip to-top"
 			on:click|preventDefault={focusTop}
 			>
-			{toTopLabel}
+			<slot name="to-top-link">
+				Top of page
+			</slot>
 		</a>
 	</footer>
 </div>
