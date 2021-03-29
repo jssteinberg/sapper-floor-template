@@ -13,6 +13,8 @@
 		classes as class,
 		language as lang,
 	};
+	export let toMainLabel = 'Main content';
+	export let toTopLabel = 'Top of page';
 
 	const { page } = stores();
 	const accessibleRouteChange = async () => {
@@ -55,11 +57,10 @@
 	<a
 		href={pathname}#main
 		class="sr-only-focusable link-skip to-main"
-		aria-label="Skip to main content"
 		on:click|preventDefault={focusMain}
 		>
 		<span class=inner-wrapper aria-hidden=true>
-			Main content
+			{toMainLabel}
 		</span>
 	</a>
 
@@ -88,7 +89,7 @@
 			on:click|preventDefault={focusTop}
 			>
 			<slot name="to-top-link">
-				Top of page
+				{toTopLabel}
 			</slot>
 		</a>
 	</footer>
