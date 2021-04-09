@@ -23,7 +23,7 @@
 	@import 'floor-typography-css/src/classes-sr.css';
 
 	body {
-		--space: calc(1rem * var(--line-height));
+		--space: calc(1rem * (1 + var(--added-lead)));
 		--font-system: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 		max-width: 50em;
