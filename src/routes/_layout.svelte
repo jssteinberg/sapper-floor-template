@@ -31,6 +31,10 @@
 		padding: 0 1ch;
 		font-family: var(--font-system);
 	}
+
+	h1 {
+		hyphens: manual;
+	}
 </style>
 
 <A11yWrapper class="page">
