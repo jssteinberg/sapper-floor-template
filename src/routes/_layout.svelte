@@ -32,8 +32,10 @@
 		font-family: var(--font-system);
 	}
 
-	h1 {
-		hyphens: manual;
+	@media (min-width: 600px) {
+		h1 {
+			hyphens: manual;
+		}
 	}
 </style>
 
